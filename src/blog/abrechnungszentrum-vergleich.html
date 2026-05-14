@@ -29,24 +29,31 @@
   </script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+  <a href="#main-content" class="skip-link" data-i18n="shared.skip">Zum Hauptinhalt springen</a>
   <div id="reading-progress" aria-hidden="true"></div>
 
   <nav id="mobile-menu" class="mobile-menu" aria-label="Mobiles Menü">
     <button id="mobile-close" class="mobile-close" aria-label="Menü schließen">✕</button>
-    <a href="../index.html">🏠 Startseite</a><a href="index.html" class="active">📰 Blog</a><a href="../vergleich/index.html">⚡ Vergleiche</a>
+    <a href="../index.html" data-i18n="shared.mobile.home">🏠 Startseite</a>
+    <a href="index.html" class="active" data-i18n="shared.mobile.blog">📰 Blog</a>
+    <a href="../vergleich/index.html" data-i18n="shared.mobile.compare">⚡ Vergleiche</a>
     <div class="mobile-divider"></div>
-    <a href="../anmelden.html">🔐 Anmelden</a><a href="../registrieren.html" class="btn btn-primary" style="text-align:center">Registrieren</a>
+    <a href="../anmelden.html" data-i18n="shared.mobile.login">🔐 Anmelden</a>
+    <a href="../registrieren.html" class="btn btn-primary" style="text-align:center" data-i18n="shared.nav.register">Kostenlos registrieren</a>
   </nav>
 
   <header class="site-header" role="banner">
     <div class="container">
       <nav class="nav-inner" aria-label="Hauptnavigation">
         <a href="../index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true">🦷</div><span class="nav-logo-text">Zahn <span>Kumpan</span></span></a>
-        <ul class="nav-links" role="list"><li><a href="index.html" class="active">Blog</a></li><li><a href="../vergleich/index.html" class="nav-premium-link">Vergleiche <span class="lock-icon">🔒</span></a></li><li><a href="../impressum.html">Über uns</a></li></ul>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="active" data-i18n="shared.nav.blog">Blog</a></li>
+          <li><a href="../vergleich/index.html" class="nav-premium-link"><span data-i18n="shared.nav.compare">Vergleiche</span> <span class="lock-icon" aria-hidden="true">🔒</span></a></li>
+          <li><a href="../impressum.html" data-i18n="shared.nav.about">Über uns</a></li>
+        </ul>
         <div class="nav-actions">
-          <a href="../anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn">Anmelden</a>
-          <a href="../registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn">Registrieren</a>
+          <a href="../anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn" data-i18n="shared.nav.login">Anmelden</a>
+          <a href="../registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn" data-i18n="shared.nav.register.short">Registrieren</a>
           <div id="nav-user-menu" class="nav-user hidden"><div class="nav-user-avatar">DN</div><span class="nav-user-name" id="nav-user-name">Demo Nutzer</span><button id="nav-logout-btn" class="btn btn-ghost btn-sm" style="padding:4px 10px;font-size:0.8rem">↪</button></div>
         </div>
         <button id="nav-hamburger" class="nav-hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
@@ -55,23 +62,27 @@
   </header>
 
   <main id="main-content">
-    <div id="member-bar" class="member-bar hidden"><div class="container"><div class="member-bar-inner"><span class="member-greeting">Willkommen zurück, <strong>Demo Nutzer</strong>!</span><span class="member-badge">⭐ Premium aktiv</span></div></div></div>
+    <div id="member-bar" class="member-bar hidden"><div class="container"><div class="member-bar-inner"><span class="member-greeting">Willkommen zurück, <strong>Demo Nutzer</strong>!</span><span class="member-badge" data-i18n="shared.member.badge.short">⭐ Premium aktiv</span></div></div></div>
 
     <div class="article-hero">
       <div class="article-header">
         <nav class="article-category-nav" aria-label="Breadcrumb">
-          <a href="../index.html">Startseite</a><span>›</span><a href="index.html">Blog</a><span>›</span><span>Abrechnung</span>
+          <a href="../index.html" data-i18n="compare.breadcrumb.home">Startseite</a>
+          <span>›</span>
+          <a href="index.html" data-i18n="shared.nav.blog">Blog</a>
+          <span>›</span>
+          <span data-i18n="billing.breadcrumb.cat">Abrechnung</span>
         </nav>
-        <div style="margin-bottom:16px"><span class="badge badge-amber">Abrechnung</span></div>
-        <h1 class="article-title">Abrechnungszentrum oder selbst abrechnen? Ein ehrlicher Vergleich</h1>
+        <div style="margin-bottom:16px"><span class="badge badge-amber" data-i18n="billing.category">Abrechnung</span></div>
+        <h1 class="article-title" data-i18n="billing.h1">Abrechnungszentrum oder selbst abrechnen? Ein ehrlicher Vergleich</h1>
         <div class="article-meta">
           <div class="article-author">
             <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=72&q=75" alt="Katrin Bauer" class="article-author-avatar" width="36" height="36">
             <span class="article-author-name">Katrin Bauer</span>
           </div>
-          <time datetime="2026-04-10" class="article-date">📅 10. April 2026</time>
-          <span class="article-readtime">⏱ 10 Min. Lesezeit</span>
-          <button id="share-btn" class="btn btn-ghost btn-sm">🔗 Teilen</button>
+          <time datetime="2026-04-10" class="article-date" data-i18n="billing.date">📅 10. April 2026</time>
+          <span class="article-readtime" data-i18n="billing.readtime">⏱ 10 Min. Lesezeit</span>
+          <button id="share-btn" class="btn btn-ghost btn-sm" data-i18n="article.share">🔗 Teilen</button>
         </div>
       </div>
       <div class="article-cover">
@@ -86,14 +97,14 @@
             Für die meisten Zahnarztpraxen macht die Privatliquidation (GOZ/GOÄ) zwischen 30 und 60 % des Umsatzes aus. Die Frage, ob man diese Abrechnung selbst erledigt oder an ein Abrechnungszentrum auslagert, <strong>kann die Praxis jährlich mehrere tausend Euro mehr oder weniger kosten</strong>. Wir rechnen es durch.
           </p>
 
-          <h2 id="was-ist-abrechnungszentrum">Was ist ein Abrechnungszentrum?</h2>
+          <h2 id="was-ist-abrechnungszentrum" data-i18n="billing.h2.what">Was ist ein Abrechnungszentrum?</h2>
           <p>Ein Abrechnungszentrum übernimmt für Sie den gesamten Prozess der Privatliquidation: Es stellt Rechnungen an Privatpatienten aus, übernimmt das Mahnwesen bei Zahlungsverzug, und zahlt Ihnen in der Regel innerhalb weniger Tage den Rechnungsbetrag aus — unabhängig davon, ob der Patient bereits gezahlt hat (Factoring). Dafür erhebt es eine Provision, die in der Regel zwischen 1,8 % und 3,5 % des Rechnungsbetrags liegt.</p>
 
-          <h2 id="die-kosten-im-vergleich">Die Kosten im Vergleich</h2>
-          <p>Nehmen wir eine mittelgroße Zahnarztpraxis als Beispiel:</p>
+          <h2 id="die-kosten-im-vergleich" data-i18n="billing.h2.costs">Die Kosten im Vergleich</h2>
+          <p data-i18n="billing.costs.intro">Nehmen wir eine mittelgroße Zahnarztpraxis als Beispiel:</p>
 
           <table>
-            <thead><tr><th>Parameter</th><th>Beispielwert</th></tr></thead>
+            <thead><tr><th data-i18n="billing.th.param">Parameter</th><th data-i18n="billing.th.value">Beispielwert</th></tr></thead>
             <tbody>
               <tr><td>Privatliquidation pro Jahr</td><td>180.000 €</td></tr>
               <tr><td>Provision DZR (2,5 %)</td><td>4.500 €</td></tr>
@@ -105,7 +116,7 @@
 
           <blockquote><p>Bei 180.000 € Privatliquidation zahlen Sie einem Abrechnungszentrum 3.600–4.500 € Provision. Eine eigene MFA für die Abrechnung (Teil ihrer Arbeitszeit) kostet ähnlich viel — ohne die Vorteile wie Factoring und Mahnwesen.</p></blockquote>
 
-          <h2 id="vorteile-abrechnungszentrum">Vorteile eines Abrechnungszentrums</h2>
+          <h2 id="vorteile-abrechnungszentrum" data-i18n="billing.h2.advantages">Vorteile eines Abrechnungszentrums</h2>
           <ul>
             <li><strong>Sofortige Liquidität:</strong> Zahlung innerhalb 2–5 Werktagen, unabhängig vom Patienten</li>
             <li><strong>Kein Mahnwesen:</strong> Das Abrechnungszentrum trägt das Ausfallrisiko (bei Factoring)</li>
@@ -113,7 +124,7 @@
             <li><strong>Zeitersparnis:</strong> Ihre MFA kann sich auf patientennahe Aufgaben konzentrieren</li>
           </ul>
 
-          <h2 id="wann-selbst-abrechnen">Wann lohnt sich eigenständige Abrechnung?</h2>
+          <h2 id="wann-selbst-abrechnen" data-i18n="billing.h2.selfbill">Wann lohnt sich eigenständige Abrechnung?</h2>
           <ul>
             <li>Wenn Ihre MFA speziell in GOZ-Abrechnung ausgebildet ist</li>
             <li>Wenn Ihr Privatliquidationsvolumen unter 80.000 €/Jahr liegt</li>
@@ -121,11 +132,11 @@
             <li>Wenn Sie in einer Gemeinschaftspraxis eigene Abrechnungsstrukturen haben</li>
           </ul>
 
-          <h2 id="dzr-arc-vergleich">DZR vs. ARC — Der direkte Vergleich</h2>
+          <h2 id="dzr-arc-vergleich" data-i18n="billing.h2.compare">DZR vs. ARC — Der direkte Vergleich</h2>
           <p>Das <strong>Deutsche Zahnärztliche Rechenzentrum (DZR)</strong> ist seit über 50 Jahren der Marktführer — mit allem, was das bedeutet: Vertrauen, Erfahrung, aber auch höherer Provision und weniger digitaler Agilität. <strong>ARC</strong> ist moderner, günstiger und bietet ein besseres Online-Portal, hat aber noch keinen vollständigen Ausfallschutz.</p>
 
           <table>
-            <thead><tr><th>Kriterium</th><th>DZR</th><th>ARC</th><th>BFS health finance</th></tr></thead>
+            <thead><tr><th data-i18n="billing.th.criterion">Kriterium</th><th>DZR</th><th>ARC</th><th>BFS health finance</th></tr></thead>
             <tbody>
               <tr><td>Provision</td><td>~2–3 %</td><td>~1,8–2,5 %</td><td>~2,2–3 %</td></tr>
               <tr><td>Factoring / Ausfallschutz</td><td>✓ Vollständig</td><td>✗ Eingeschränkt</td><td>✓ Vollständig</td></tr>
@@ -135,23 +146,23 @@
             </tbody>
           </table>
 
-          <h2 id="empfehlung">Unsere Empfehlung</h2>
+          <h2 id="empfehlung" data-i18n="billing.h2.recommendation">Unsere Empfehlung</h2>
           <p>Für die meisten niedergelassenen Zahnarztpraxen in Deutschland lohnt sich ein Abrechnungszentrum, wenn das Privatliquidationsvolumen über 100.000 € pro Jahr liegt. Die Zeitersparnis und der Ausfallschutz kompensieren die Provision in den meisten Fällen.</p>
           <p>Die vollständigen Vergleichsdaten mit Ratings und Filtermöglichkeiten finden Sie in unserem <a href="../vergleich/index.html">Premium-Vergleichsbereich</a>.</p>
 
           <div style="margin:40px 0;padding:28px;background:linear-gradient(135deg,var(--amber-50),#FEF3C7);border:1px solid var(--amber-200);border-radius:var(--radius-lg)">
-            <h3 style="margin-bottom:8px;font-size:1.1rem;color:var(--amber-800)">Abrechnungszentrum-Vergleich ansehen</h3>
-            <p style="margin-bottom:20px;font-size:0.9rem;color:var(--amber-700)">3 Anbieter im Detail mit echten Provisionen, Bewertungen und Praxis-Erfahrungen — exklusiv für Mitglieder.</p>
+            <h3 style="margin-bottom:8px;font-size:1.1rem;color:var(--amber-800)" data-i18n="billing.cta.heading">Abrechnungszentrum-Vergleich ansehen</h3>
+            <p style="margin-bottom:20px;font-size:0.9rem;color:var(--amber-700)" data-i18n="billing.cta.desc">3 Anbieter im Detail mit echten Provisionen, Bewertungen und Praxis-Erfahrungen — exklusiv für Mitglieder.</p>
             <div style="display:flex;gap:10px;flex-wrap:wrap">
-              <a href="../vergleich/index.html" class="btn btn-amber">Zu den Vergleichen →</a>
-              <a href="../registrieren.html" class="btn btn-outline">Kostenlos registrieren</a>
+              <a href="../vergleich/index.html" class="btn btn-amber" data-i18n="article.to.compare">Zu den Vergleichen →</a>
+              <a href="../registrieren.html" class="btn btn-outline" data-i18n="article.register">Kostenlos registrieren</a>
             </div>
           </div>
         </div>
 
         <div style="margin-top:40px;padding-top:24px;border-top:1px solid var(--gray-100)">
           <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-            <span style="font-size:0.8125rem;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.05em">Tags:</span>
+            <span style="font-size:0.8125rem;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.05em" data-i18n="article.tags">Tags:</span>
             <a href="index.html" class="badge badge-gray" style="text-decoration:none">Abrechnung</a>
             <a href="index.html" class="badge badge-gray" style="text-decoration:none">DZR</a>
             <a href="index.html" class="badge badge-gray" style="text-decoration:none">GOÄ</a>
@@ -163,39 +174,39 @@
           <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=120&q=75" alt="Katrin Bauer" width="60" height="60" style="border-radius:50%;flex-shrink:0;object-fit:cover">
           <div>
             <div style="font-weight:700;color:var(--gray-900);margin-bottom:4px">Katrin Bauer</div>
-            <div style="font-size:0.8125rem;color:var(--gray-500);margin-bottom:8px">Praxisberaterin, GOZ-Expertin</div>
-            <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.6;margin:0">Katrin Bauer ist Praxisberaterin mit Spezialisierung auf Abrechnungsoptimierung und Privatliquidation. Sie hat über 200 Zahnarztpraxen bei der Optimierung ihrer Abrechnungsprozesse begleitet.</p>
+            <div style="font-size:0.8125rem;color:var(--gray-500);margin-bottom:8px" data-i18n="billing.author.role">Praxisberaterin, GOZ-Expertin</div>
+            <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.6;margin:0" data-i18n="billing.author.bio">Katrin Bauer ist Praxisberaterin mit Spezialisierung auf Abrechnungsoptimierung und Privatliquidation. Sie hat über 200 Zahnarztpraxen bei der Optimierung ihrer Abrechnungsprozesse begleitet.</p>
           </div>
         </div>
       </article>
 
       <aside class="article-sidebar" aria-label="Artikel-Navigation">
         <div class="toc-widget">
-          <div class="toc-title">Inhaltsverzeichnis</div>
+          <div class="toc-title" data-i18n="article.toc">Inhaltsverzeichnis</div>
           <nav class="toc-list" aria-label="Inhaltsverzeichnis">
-            <a href="#was-ist-abrechnungszentrum" class="toc-link">Was ist ein Abrechnungszentrum?</a>
-            <a href="#die-kosten-im-vergleich" class="toc-link">Die Kosten im Vergleich</a>
-            <a href="#vorteile-abrechnungszentrum" class="toc-link">Vorteile Abrechnungszentrum</a>
-            <a href="#wann-selbst-abrechnen" class="toc-link">Wann selbst abrechnen?</a>
-            <a href="#dzr-arc-vergleich" class="toc-link">DZR vs. ARC</a>
-            <a href="#empfehlung" class="toc-link">Empfehlung</a>
+            <a href="#was-ist-abrechnungszentrum" class="toc-link" data-i18n="billing.toc.1">Was ist ein Abrechnungszentrum?</a>
+            <a href="#die-kosten-im-vergleich" class="toc-link" data-i18n="billing.toc.2">Die Kosten im Vergleich</a>
+            <a href="#vorteile-abrechnungszentrum" class="toc-link" data-i18n="billing.toc.3">Vorteile Abrechnungszentrum</a>
+            <a href="#wann-selbst-abrechnen" class="toc-link" data-i18n="billing.toc.4">Wann selbst abrechnen?</a>
+            <a href="#dzr-arc-vergleich" class="toc-link" data-i18n="billing.toc.5">DZR vs. ARC</a>
+            <a href="#empfehlung" class="toc-link" data-i18n="billing.toc.6">Empfehlung</a>
           </nav>
         </div>
         <div style="padding:20px;background:linear-gradient(135deg,var(--amber-500),var(--amber-600));border-radius:var(--radius-lg);color:white;margin-bottom:24px;text-align:center">
           <div style="font-size:1.5rem;margin-bottom:8px">💰</div>
-          <div style="font-weight:700;font-size:0.9375rem;margin-bottom:8px">Abrechnungsvergleich</div>
-          <p style="font-size:0.8125rem;color:rgba(255,255,255,0.9);margin-bottom:16px;line-height:1.5">DZR, ARC &amp; BFS im Detail mit Provisionen und Ratings</p>
-          <a href="../vergleich/index.html" class="btn btn-primary btn-sm btn-full" style="background:white;color:var(--amber-700);border-color:white">Vergleich ansehen</a>
+          <div style="font-weight:700;font-size:0.9375rem;margin-bottom:8px" data-i18n="billing.sidebar.title">Abrechnungsvergleich</div>
+          <p style="font-size:0.8125rem;color:rgba(255,255,255,0.9);margin-bottom:16px;line-height:1.5" data-i18n="billing.sidebar.desc">DZR, ARC &amp; BFS im Detail mit Provisionen und Ratings</p>
+          <a href="../vergleich/index.html" class="btn btn-primary btn-sm btn-full" style="background:white;color:var(--amber-700);border-color:white" data-i18n="billing.sidebar.cta">Vergleich ansehen</a>
         </div>
         <div class="related-widget">
-          <div class="related-widget-header"><div class="related-widget-title">Weitere Beiträge</div></div>
+          <div class="related-widget-header"><div class="related-widget-title" data-i18n="article.related">Weitere Beiträge</div></div>
           <a href="terminbuchung-software.html" class="related-post" style="display:flex;text-decoration:none">
             <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=112&q=75" alt="" class="related-post-image" width="56" height="56" loading="lazy">
-            <div class="related-post-content"><div class="related-post-title">Die 5 besten Terminbuchungssysteme 2026</div><div class="related-post-date">1. Mai 2026</div></div>
+            <div class="related-post-content"><div class="related-post-title" data-i18n="billing.related.1">Die 5 besten Terminbuchungssysteme 2026</div><div class="related-post-date" data-i18n="billing.related.date1">1. Mai 2026</div></div>
           </a>
           <a href="digitalisierung-zahnarzt.html" class="related-post" style="display:flex;text-decoration:none">
             <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=112&q=75" alt="" class="related-post-image" width="56" height="56" loading="lazy">
-            <div class="related-post-content"><div class="related-post-title">Digitalisierung in der Zahnarztpraxis</div><div class="related-post-date">22. Apr. 2026</div></div>
+            <div class="related-post-content"><div class="related-post-title" data-i18n="billing.related.2">Digitalisierung in der Zahnarztpraxis</div><div class="related-post-date" data-i18n="billing.related.date2">22. Apr. 2026</div></div>
           </a>
         </div>
       </aside>
@@ -205,15 +216,16 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="../index.html" class="footer-logo"><div class="footer-logo-icon">🦷</div><span class="footer-logo-text">Zahn Kumpan</span></a><p class="footer-tagline">Das Wissensportal für Zahnarztpraxen in Deutschland.</p></div>
-        <div class="footer-col"><h4>Blog</h4><ul class="footer-links"><li><a href="terminbuchung-software.html">Terminbuchung</a></li><li><a href="digitalisierung-zahnarzt.html">Digitalisierung</a></li><li><a href="abrechnungszentrum-vergleich.html">Abrechnung</a></li></ul></div>
-        <div class="footer-col"><h4>Portal</h4><ul class="footer-links"><li><a href="../index.html">Startseite</a></li><li><a href="../vergleich/index.html">Vergleiche</a></li></ul></div>
-        <div class="footer-col"><h4>Rechtliches</h4><ul class="footer-links"><li><a href="../impressum.html">Impressum</a></li><li><a href="../datenschutz.html">Datenschutz</a></li></ul></div>
+        <div class="footer-brand"><a href="../index.html" class="footer-logo"><div class="footer-logo-icon">🦷</div><span class="footer-logo-text">Zahn Kumpan</span></a><p class="footer-tagline" data-i18n="shared.footer.tagline.short">Das Wissensportal für Zahnarztpraxen in Deutschland.</p></div>
+        <div class="footer-col"><h4 data-i18n="shared.footer.blog.col">Blog</h4><ul class="footer-links"><li><a href="terminbuchung-software.html">Terminbuchung</a></li><li><a href="digitalisierung-zahnarzt.html">Digitalisierung</a></li><li><a href="abrechnungszentrum-vergleich.html">Abrechnung</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="shared.footer.portal">Portal</h4><ul class="footer-links"><li><a href="../index.html" data-i18n="shared.footer.home">Startseite</a></li><li><a href="../vergleich/index.html" data-i18n="shared.footer.compare">Vergleiche</a></li></ul></div>
+        <div class="footer-col"><h4 data-i18n="shared.footer.legal">Rechtliches</h4><ul class="footer-links"><li><a href="../impressum.html" data-i18n="shared.footer.imprint">Impressum</a></li><li><a href="../datenschutz.html" data-i18n="shared.footer.privacy">Datenschutz</a></li></ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Zahn Kumpan.</span><div class="footer-bottom-links"><a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Datenschutz</a></div></div>
+      <div class="footer-bottom"><span data-i18n="shared.footer.copyright.short">© 2026 Zahn Kumpan.</span><div class="footer-bottom-links"><a href="../impressum.html" data-i18n="shared.footer.imprint">Impressum</a><a href="../datenschutz.html" data-i18n="shared.footer.privacy">Datenschutz</a></div></div>
     </div>
   </footer>
 
+  <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/auth.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>

@@ -9,9 +9,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+  <a href="#main-content" class="skip-link" data-i18n="shared.skip">Zum Hauptinhalt springen</a>
 
-  <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container">
       <nav class="nav-inner" aria-label="Hauptnavigation">
@@ -20,8 +19,8 @@
           <span class="nav-logo-text">Zahn <span>Kumpan</span></span>
         </a>
         <div class="nav-actions" style="margin-left:auto">
-          <span style="font-size:0.875rem;color:var(--gray-500)">Noch kein Konto?</span>
-          <a href="registrieren.html" class="btn btn-primary btn-sm">Kostenlos registrieren</a>
+          <span style="font-size:0.875rem;color:var(--gray-500)" data-i18n="login.no.account.nav">Noch kein Konto?</span>
+          <a href="registrieren.html" class="btn btn-primary btn-sm" data-i18n="shared.nav.register">Kostenlos registrieren</a>
         </div>
       </nav>
     </div>
@@ -34,90 +33,64 @@
           <div class="auth-logo">
             <div style="width:56px;height:56px;background:linear-gradient(135deg,var(--primary-700),var(--teal-600));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:1.75rem;box-shadow:var(--shadow-md)">🦷</div>
           </div>
-          <h1 class="auth-title" id="login-heading">Willkommen zurück</h1>
-          <p class="auth-subtitle">Melde dich an, um auf Premium-Inhalte zuzugreifen</p>
+          <h1 class="auth-title" id="login-heading" data-i18n="login.heading">Willkommen zurück</h1>
+          <p class="auth-subtitle" data-i18n="login.subtitle">Melde dich an, um auf Premium-Inhalte zuzugreifen</p>
         </div>
 
-        <!-- Demo hint -->
         <div class="demo-hint" role="note" aria-label="Demo-Zugangsdaten">
           🔐 <strong>Demo-Zugangsdaten:</strong><br>
           E-Mail: <strong>demo@zahnkumpan.de</strong> · Passwort: <strong>test1234</strong>
         </div>
 
-        <!-- Error message -->
         <div id="login-error" class="alert alert-error hidden" role="alert" aria-live="assertive"></div>
 
         <form id="login-form" novalidate aria-label="Anmeldeformular">
           <div class="form-group">
-            <label for="login-email" class="form-label">E-Mail-Adresse</label>
+            <label for="login-email" class="form-label" data-i18n="login.email.label">E-Mail-Adresse</label>
             <div class="form-input-wrapper">
               <span class="form-input-icon" aria-hidden="true">✉</span>
-              <input
-                type="email"
-                id="login-email"
-                name="email"
-                class="form-input"
-                placeholder="ihre@praxis.de"
-                autocomplete="email"
-                required
-                aria-required="true"
-                aria-describedby="email-hint"
-              >
+              <input type="email" id="login-email" name="email" class="form-input"
+                placeholder="ihre@praxis.de" data-i18n-placeholder="login.email.placeholder"
+                autocomplete="email" required aria-required="true" aria-describedby="email-hint">
             </div>
             <span id="email-hint" class="form-hint sr-only">Geben Sie Ihre E-Mail-Adresse ein</span>
           </div>
 
           <div class="form-group">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-              <label for="login-password" class="form-label" style="margin-bottom:0">Passwort</label>
-              <a href="#" style="font-size:0.8rem;color:var(--primary-700)">Passwort vergessen?</a>
+              <label for="login-password" class="form-label" style="margin-bottom:0" data-i18n="login.password.label">Passwort</label>
+              <a href="#" style="font-size:0.8rem;color:var(--primary-700)" data-i18n="login.password.forgot">Passwort vergessen?</a>
             </div>
             <div class="form-input-wrapper">
               <span class="form-input-icon" aria-hidden="true">🔑</span>
-              <input
-                type="password"
-                id="login-password"
-                name="password"
-                class="form-input"
-                placeholder="••••••••"
-                autocomplete="current-password"
-                required
-                aria-required="true"
-              >
-              <button
-                type="button"
-                id="toggle-password"
-                class="form-input-toggle"
-                aria-label="Passwort anzeigen/verstecken"
-              >👁</button>
+              <input type="password" id="login-password" name="password" class="form-input"
+                placeholder="••••••••" autocomplete="current-password" required aria-required="true">
+              <button type="button" id="toggle-password" class="form-input-toggle" aria-label="Passwort anzeigen/verstecken">👁</button>
             </div>
           </div>
 
           <div class="form-group">
             <div class="form-checkbox-group">
               <input type="checkbox" id="remember-me" name="remember" class="form-checkbox">
-              <label for="remember-me" class="form-checkbox-label">Angemeldet bleiben</label>
+              <label for="remember-me" class="form-checkbox-label" data-i18n="login.remember">Angemeldet bleiben</label>
             </div>
           </div>
 
-          <button type="submit" id="login-submit" class="btn btn-primary btn-full btn-lg">
-            Anmelden
-          </button>
+          <button type="submit" id="login-submit" class="btn btn-primary btn-full btn-lg" data-i18n="login.submit">Anmelden</button>
         </form>
 
         <div class="auth-switch">
-          Noch kein Konto? <a href="registrieren.html">Kostenlos registrieren</a>
+          <span data-i18n="login.no.account">Noch kein Konto?</span> <a href="registrieren.html" data-i18n="login.register.link">Kostenlos registrieren</a>
         </div>
 
         <div style="margin-top:20px;text-align:center">
-          <a href="index.html" style="font-size:0.8125rem;color:var(--gray-400);text-decoration:none">
-            ← Zurück zur Startseite
-          </a>
+          <a href="index.html" style="font-size:0.8125rem;color:var(--gray-400);text-decoration:none" data-i18n="login.back">← Zurück zur Startseite</a>
         </div>
       </div>
     </div>
   </main>
 
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/auth.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

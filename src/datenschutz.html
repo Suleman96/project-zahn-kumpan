@@ -9,15 +9,18 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+  <a href="#main-content" class="skip-link" data-i18n="shared.skip">Zum Hauptinhalt springen</a>
   <header class="site-header" role="banner">
     <div class="container">
       <nav class="nav-inner" aria-label="Hauptnavigation">
         <a href="index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true">🦷</div><span class="nav-logo-text">Zahn <span>Kumpan</span></span></a>
-        <ul class="nav-links" role="list"><li><a href="blog/index.html">Blog</a></li><li><a href="vergleich/index.html">Vergleiche</a></li></ul>
+        <ul class="nav-links" role="list">
+          <li><a href="blog/index.html" data-i18n="shared.nav.blog">Blog</a></li>
+          <li><a href="vergleich/index.html"><span data-i18n="shared.nav.compare">Vergleiche</span></a></li>
+        </ul>
         <div class="nav-actions">
-          <a href="anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn">Anmelden</a>
-          <a href="registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn">Registrieren</a>
+          <a href="anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn" data-i18n="shared.nav.login">Anmelden</a>
+          <a href="registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn" data-i18n="shared.nav.register.short">Registrieren</a>
           <div id="nav-user-menu" class="nav-user hidden"><div class="nav-user-avatar">DN</div><span class="nav-user-name" id="nav-user-name">Demo Nutzer</span><button id="nav-logout-btn" class="btn btn-ghost btn-sm" style="padding:4px 10px;font-size:0.8rem">↪</button></div>
         </div>
       </nav>
@@ -28,7 +31,7 @@
     <div style="background:var(--gray-50);padding:48px 0 32px;border-bottom:1px solid var(--gray-100)">
       <div class="container-narrow">
         <nav style="font-size:0.8125rem;color:var(--gray-400);margin-bottom:16px">
-          <a href="index.html" style="color:var(--primary-700)">Startseite</a> › <span>Datenschutz</span>
+          <a href="index.html" style="color:var(--primary-700)" data-i18n="shared.footer.home">Startseite</a> › <span data-i18n="shared.footer.privacy">Datenschutz</span>
         </nav>
         <h1 style="font-size:2rem;letter-spacing:-0.02em">Datenschutzerklärung</h1>
         <p style="color:var(--gray-500);margin-top:8px">Stand: Mai 2026 · DSGVO-konform</p>
@@ -112,12 +115,16 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-bottom" style="padding-top:0;border-top:none;padding:24px 0">
-        <span>© 2026 Zahn Kumpan. Alle Rechte vorbehalten.</span>
-        <div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+        <span data-i18n="shared.footer.copyright">© 2026 Zahn Kumpan. Alle Rechte vorbehalten.</span>
+        <div class="footer-bottom-links">
+          <a href="impressum.html" data-i18n="shared.footer.imprint">Impressum</a>
+          <a href="datenschutz.html" data-i18n="shared.footer.privacy">Datenschutz</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/auth.js"></script>
 </body>
 </html>

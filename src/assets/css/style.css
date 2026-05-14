@@ -335,6 +335,30 @@ strong { font-weight: 600; color: var(--gray-900); }
   color: var(--gray-700);
 }
 
+/* Language toggle */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--primary-700);
+  background: var(--primary-50);
+  border: 1.5px solid var(--primary-200, #BAE6FD);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.lang-toggle:hover {
+  background: var(--primary-100);
+  border-color: var(--primary-400);
+  color: var(--primary-900);
+}
+
 /* Hamburger */
 .nav-hamburger {
   display: none;
