@@ -1,0 +1,148 @@
+14.05.26 - Muhammad 
+Empty
+Empty
+Meetings
+Empty
+Wir möchten einen weiteren Mitarbeiter zur Erstellung und Betreuung vom Portal für Zahn Kumpan einstellen.
+Next step: Er kommt am 14.05.26 zu uns ins Büro zum kennenlernen. Wenn er sich auf Minijob 17 € oder Freelancer 21 € einigt (aktuell bekommt er 25 als Angestellter), dann geben wir ihm die Testaufgabe mit.
+Bewerbungsunterlagen
+
+# 🦷 Zahn Kumpan — Trial Project Brief
+
+---
+
+> 👋 **Hey Muhammad!** Welcome to the team trial. This task gives you a real feel for the kind of work we do at Zahn Kumpan. Take your time, think it through, and show us how you approach problems — not just the final result.
+> 
+
+---
+
+## 📌 Context
+
+**Zahn Kumpan** is a digital agency focused exclusively on dentists in Germany. We are building a **web portal** for dental professionals where they can:
+
+- Read editorial blog content (public, SEO-indexed)
+- Access **premium content** like provider comparisons (members only, behind login)
+
+Our current setup is WordPress, but for the portal we are open to any CMS or tech stack. SEO is a top priority — we need to rank well on Google for dental-industry search terms. We will create a subdomain just like [portal.zahn-kumpan.de](http://portal.zahn-kumpan.de) for that so you got a complete new space for everything.
+
+---
+
+## 🎯 Your Task
+
+You will deliver **two things**:
+
+1. A **functional front-end prototype in the design of zahn-kumpan.de** (HTML/CSS/JS)
+2. A **short Technical Concept Document** (1–2 pages, PDF or Markdown)
+
+---
+
+## Part 1 — Functional Prototype
+
+Build a static, browser-runnable prototype. No back-end required. Use whatever stack you prefer (vanilla HTML/CSS/JS, React, Next.js, etc.).
+
+## Pages & Features to Build
+
+**A) Public Landing Page**
+
+- Clear headline and short description of what the portal offers
+- At least 3 blog post teasers (title, excerpt, date, category)
+- A visible CTA: *"Log in"* / *"Register for free"*
+- Correct semantic HTML (`<main>`, `<article>`, `<header>`, `<nav>`, `<footer>`)
+- JSON-LD Schema Markup for at least one blog post (`BlogPosting` type)
+
+**B) Login Gate**
+
+- A login form (email + password)
+- No real backend needed — hardcoded demo credentials are fine (`demo@zahnkumpan.de` / `test1234`)
+- After login: user can access the premium area
+- Before login: premium content is **visible but locked** — use a blur + overlay + CTA pattern (no full hiding)
+
+**C) Premium Comparison Feature** *(only accessible when logged in)*
+
+- An interactive comparison table for at least **2 fictional dental providers** (1. booking appointment and 2. Billing centre for dentists)
+- At least **2 filterable criteria** (e.g. price range, support quality, feature set)
+- Clean, professional UI — this is a product dentists will pay to access
+
+---
+
+## Part 2 — Technical Concept Document
+
+Write a short document (English, 1–2 pages) covering the following:
+
+## 1. CMS Recommendation
+
+Which CMS would you choose for this portal and why? Consider:
+
+- SEO capabilities (sitemap, meta tags, structured data)
+- Developer experience
+- Cost at scale (e.g. 10,000+ articles)
+- Headless vs. traditional
+
+Options to evaluate (pick one and justify, or propose your own): *Sanity, Payload CMS, Directus, WordPress headless, or other*
+
+## 2. Auth & Membership Strategy
+
+How would you implement the login/member system in production?
+
+- Which service or approach? (e.g. Supabase, NextAuth, Memberstack, custom JWT)
+- How do you protect premium routes server-side? (Important: client-side-only gating is not enough)
+
+## 3. SEO Checklist
+
+List your **top 5 technical SEO priorities** for this kind of portal. Be specific — not generic advice.
+
+## 4. LLM Integration Idea *(Bonus — optional)*
+
+How could an LLM be meaningfully integrated into this portal? Think about real value for dentists, not just a chatbot. One concrete idea with a short explanation is enough.
+
+---
+
+## 📦 Deliverables
+
+| # | What | Format |
+| --- | --- | --- |
+| 1 | Working prototype | ZIP, GitHub link, or CodeSandbox |
+| 2 | Technical Concept Document | PDF or Markdown |
+
+Please send both to us **before our next meeting**.
+
+---
+
+## ⏱ Time & Expectations
+
+- **Estimated effort:** 3–5 days
+- This is not a pixel-perfect design task. We care more about **technical decisions and code quality** than visual polish.
+- Use AI tools freely — but be ready to explain every decision in the meeting.
+
+---
+
+## 🗣 What We'll Discuss in the Meeting
+
+Come prepared to talk through:
+
+1. Why you chose your CMS — and how your answer changes at 10,000+ articles
+2. Walk us through the filter logic in your comparison table
+3. How would you make the login gate secure if there were a real backend issue.
+4. Your LLM idea (if you did the bonus)
+
+---
+
+> 💬 **Questions?** Reach out anytime. We'd rather you ask than get stuck.
+> 
+> 
+> Good luck, Muhammad — we're looking forward to seeing your work! 🚀
+> 
+
+# Meeting from the 08.05.
+
+- LLM für Suche auch möglich?
+    - Als dynamic web page möglich
+- Am Anfang einen Fragebogen oder ähnliches eingeplant?
+    - Kein LLM verwenden
+    - Bestehende Praxen fragen, welche Fragen wir stellen müssen
+- LLM GDPR-Compliant Erfahrung?
+    - 
+
+- Design mit Claude Design oder Ähnliches
+- Teralios zeigen
+-

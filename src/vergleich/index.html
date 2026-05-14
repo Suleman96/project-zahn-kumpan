@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anbietervergleiche für Zahnarztpraxen — Terminbuchungssoftware und Abrechnungszentren im detaillierten Vergleich mit Preisen, Features und Bewertungen.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Anbietervergleiche — Zahn Kumpan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobiles Menü">
+    <button id="mobile-close" class="mobile-close" aria-label="Menü schließen">✕</button>
+    <a href="../index.html">🏠 Startseite</a>
+    <a href="../blog/index.html">📰 Blog</a>
+    <a href="index.html" class="active">⚡ Vergleiche</a>
+    <div class="mobile-divider"></div>
+    <a href="../anmelden.html" id="mobile-login">🔐 Anmelden</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Hauptnavigation">
+        <a href="../index.html" class="nav-logo" aria-label="Zahn Kumpan — Startseite">
+          <div class="nav-logo-icon" aria-hidden="true">🦷</div>
+          <span class="nav-logo-text">Zahn <span>Kumpan</span></span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="index.html" class="active">Vergleiche</a></li>
+          <li><a href="../impressum.html">Über uns</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="../anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn">Anmelden</a>
+          <a href="../registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn">Registrieren</a>
+          <div id="nav-user-menu" class="nav-user hidden">
+            <div class="nav-user-avatar">DN</div>
+            <span class="nav-user-name" id="nav-user-name">Demo Nutzer</span>
+            <button id="nav-logout-btn" class="btn btn-ghost btn-sm" style="padding:4px 10px;font-size:0.8rem" aria-label="Abmelden">↪</button>
+          </div>
+        </div>
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Member bar -->
+    <div id="member-bar" class="member-bar hidden">
+      <div class="container">
+        <div class="member-bar-inner">
+          <span class="member-greeting">Willkommen zurück, <strong>Demo Nutzer</strong>! Du hast Premium-Zugang.</span>
+          <span class="member-badge">⭐ Premium aktiv</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gate (not logged in) -->
+    <div id="premium-gate-container">
+      <div style="min-height:70vh;display:flex;align-items:center;justify-content:center;padding:80px 24px;background:var(--gray-50)">
+        <div style="text-align:center;max-width:520px">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--amber-500),var(--amber-600));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;box-shadow:0 8px 32px rgba(245,158,11,0.3)">🔒</div>
+          <h1 style="font-size:2rem;margin-bottom:12px;letter-spacing:-0.02em">Premium-Inhalt</h1>
+          <p style="color:var(--gray-500);font-size:1.0625rem;margin-bottom:32px;line-height:1.65">
+            Die vollständigen Anbietervergleiche sind nur für registrierte Mitglieder zugänglich. Die Registrierung ist kostenlos und dauert unter 2 Minuten.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto 24px">
+            <a href="../registrieren.html" class="btn btn-amber btn-lg btn-full">🚀 Kostenlos registrieren</a>
+            <a href="../anmelden.html"     class="btn btn-outline btn-full">Bereits Mitglied? Anmelden</a>
+          </div>
+          <p style="font-size:0.8125rem;color:var(--gray-400)">Keine Kreditkarte · Keine Werbung · DSGVO-konform</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full comparison content (logged in) -->
+    <div id="premium-full-content" class="hidden">
+      <!-- Page header -->
+      <div style="background:linear-gradient(135deg,var(--primary-900),var(--primary-700));padding:64px 0 48px;color:white">
+        <div class="container">
+          <div style="max-width:640px">
+            <nav aria-label="Breadcrumb" style="font-size:0.8125rem;color:rgba(255,255,255,0.6);margin-bottom:16px">
+              <a href="../index.html" style="color:rgba(255,255,255,0.6)">Startseite</a>
+              <span style="margin:0 8px">›</span>
+              <span style="color:white">Vergleiche</span>
+            </nav>
+            <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 14px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:999px;font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:16px">
+              ⭐ Premium-Inhalt
+            </span>
+            <h1 style="color:white;font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:12px;letter-spacing:-0.02em">Anbietervergleiche</h1>
+            <p style="color:rgba(255,255,255,0.75);font-size:1.0625rem;line-height:1.65">
+              Detaillierte Vergleiche für Terminbuchungssoftware und Abrechnungszentren — mit echten Preisen, Feature-Listen und Praxis-Bewertungen. Zuletzt aktualisiert: Mai 2026.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison section -->
+      <section class="comparison-page" id="comparison-section" aria-labelledby="comparison-heading">
+        <div class="container">
+          <h2 class="sr-only" id="comparison-heading">Anbietervergleich</h2>
+
+          <!-- Filters bar -->
+          <div class="filters-bar" role="search" aria-label="Vergleichs-Filter">
+            <span class="filters-bar-label">Filter:</span>
+
+            <!-- Category toggle -->
+            <div class="filter-toggle" role="group" aria-label="Kategorie">
+              <button class="filter-toggle-btn active" data-category="all">Alle</button>
+              <button class="filter-toggle-btn" data-category="terminbuchung">Terminbuchung</button>
+              <button class="filter-toggle-btn" data-category="abrechnung">Abrechnung</button>
+            </div>
+
+            <!-- Price range -->
+            <select id="filter-price" class="filter-select" aria-label="Preisklasse filtern">
+              <option value="all">Alle Preisklassen</option>
+              <option value="guenstig">Günstig (&lt;€50)</option>
+              <option value="mittel">Mittel (€50–€120)</option>
+              <option value="premium">Premium (&gt;€120)</option>
+              <option value="provision">Provisionsbasiert</option>
+            </select>
+
+            <!-- Support quality -->
+            <select id="filter-support" class="filter-select" aria-label="Mindest-Supportqualität">
+              <option value="all">Alle Supportqualitäten</option>
+              <option value="4">Sehr gut &amp; besser</option>
+              <option value="5">Nur Exzellent</option>
+            </select>
+
+            <!-- Sort -->
+            <select id="filter-sort" class="filter-select" aria-label="Sortierung">
+              <option value="rating">Sortieren: Beste Bewertung</option>
+              <option value="price">Sortieren: Niedrigster Preis</option>
+              <option value="support">Sortieren: Bester Support</option>
+            </select>
+
+            <span id="filter-results-count" class="filter-results" aria-live="polite">6 Anbieter gefunden</span>
+
+            <!-- View toggle -->
+            <div class="view-toggle" role="group" aria-label="Darstellung wählen" style="margin-left:auto">
+              <button class="view-toggle-btn active" data-view="cards" aria-pressed="true" title="Kachelansicht">⊞ Kacheln</button>
+              <button class="view-toggle-btn" data-view="table" aria-pressed="false" title="Tabellenansicht">☰ Tabelle</button>
+            </div>
+          </div>
+
+          <!-- Cards view -->
+          <div id="cards-view">
+            <div class="comparison-grid" id="comparison-grid" aria-label="Anbieter-Kacheln">
+              <!-- Rendered by comparison.js -->
+            </div>
+          </div>
+
+          <!-- Table view -->
+          <div id="table-view" class="hidden">
+            <div class="comparison-table-wrapper" role="region" aria-label="Anbietervergleich-Tabelle" tabindex="0">
+              <table class="comparison-table" aria-label="Anbietervergleich">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <button data-sort="name" aria-label="Nach Name sortieren">
+                        Anbieter <span class="sort-arrow">↕</span>
+                      </button>
+                    </th>
+                    <th scope="col">
+                      <button data-sort="price" aria-label="Nach Preis sortieren">
+                        Preis <span class="sort-arrow">↕</span>
+                      </button>
+                    </th>
+                    <th scope="col">
+                      <button data-sort="rating" aria-label="Nach Bewertung sortieren">
+                        Bewertung <span class="sort-arrow">↓</span>
+                      </button>
+                    </th>
+                    <th scope="col">
+                      <button data-sort="support" aria-label="Nach Support sortieren">
+                        Support <span class="sort-arrow">↕</span>
+                      </button>
+                    </th>
+                    <th scope="col">Testzeitraum</th>
+                    <th scope="col">Features</th>
+                    <th scope="col"><span class="sr-only">Aktionen</span></th>
+                  </tr>
+                </thead>
+                <tbody id="comparison-tbody">
+                  <!-- Rendered by comparison.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Note -->
+          <div style="margin-top:32px;padding:20px 24px;background:var(--primary-50);border:1px solid var(--primary-100);border-radius:var(--radius-md)">
+            <p style="font-size:0.875rem;color:var(--primary-800);line-height:1.6">
+              <strong>Hinweis:</strong> Alle Preise und Angaben wurden im Mai 2026 recherchiert. Tatsächliche Konditionen können abweichen — bitte prüfen Sie die aktuellen Informationen direkt beim Anbieter. Unsere Vergleiche sind unabhängig und werden nicht von den Anbietern gesponsert.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <div class="footer-logo-icon">🦷</div>
+            <span class="footer-logo-text">Zahn Kumpan</span>
+          </a>
+          <p class="footer-tagline">Das Wissensportal für Zahnarztpraxen in Deutschland.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Portal</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="index.html">Vergleiche</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Konto</h4>
+          <ul class="footer-links">
+            <li><a href="../anmelden.html">Anmelden</a></li>
+            <li><a href="../registrieren.html">Registrieren</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="../impressum.html">Impressum</a></li>
+            <li><a href="../datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Zahn Kumpan. Alle Rechte vorbehalten.</span>
+        <div class="footer-bottom-links">
+          <a href="../impressum.html">Impressum</a>
+          <a href="../datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/comparison.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

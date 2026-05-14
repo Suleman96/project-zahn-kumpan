@@ -1,0 +1,29 @@
+# ============================================================
+# Zahn Kumpan Portal — Requirements
+# ============================================================
+#
+# This project is a pure static site (HTML / CSS / JS).
+# No build step, no framework, no compilation needed.
+#
+# Python is only used for running a local development server.
+# Python 3.x comes with a built-in HTTP server — no install required.
+#
+# ── Local dev server (built-in, no pip install needed) ───────
+#   python -m http.server 8080 --directory docs/
+#
+# ── Optional: live-reload dev server ─────────────────────────
+#   pip install livereload
+#   python dev_server.py
+#
+# ── Optional: HTML/CSS linting ───────────────────────────────
+#   pip install html5-parser
+#   pip install cssutils
+#
+# ── Optional: link checker ───────────────────────────────────
+#   pip install linkchecker
+#   linkchecker http://localhost:8080/
+#
+# ─────────────────────────────────────────────────────────────
+
+# Live reload dev server (optional)
+livereload==2.7.0

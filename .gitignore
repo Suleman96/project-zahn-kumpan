@@ -1,0 +1,64 @@
+# ── Python ──────────────────────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Node.js (if added later) ─────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.pnp/
+.pnp.js
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editors ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# ── Environment / secrets ────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temp / cache ─────────────────────────────────────────────
+.cache/
+.temp/
+tmp/
+*.tmp
+
+# ── Project-specific ─────────────────────────────────────────
+# The docs/ folder IS committed — it is the GitHub Pages source
+# The documentation/ folder IS committed — project context
+# The .venv/ folder is NOT committed

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zahn Kumpan — Das Wissensportal für Zahnarztpraxen. Vergleiche Software, lese Fachbeiträge und treffe bessere Entscheidungen für deine Praxis.">
+  <meta name="keywords" content="Zahnarzt Software Vergleich, Praxissoftware, Abrechnungszentrum Zahnarzt, Terminbuchung Zahnarzt">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Zahn Kumpan — Wissensportal für Zahnarztpraxen">
+  <meta property="og:description" content="Fachbeiträge, Softwarevergleiche und Praxis-Know-how exklusiv für Zahnärzte in Deutschland.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffbb172d936?w=1200&q=80">
+  <title>Zahn Kumpan — Wissensportal für Zahnarztpraxen</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+  <!-- JSON-LD Schema for BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Zahn Kumpan",
+    "url": "https://portal.zahn-kumpan.de",
+    "description": "Das Wissensportal für Zahnarztpraxen in Deutschland",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zahn Kumpan",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://portal.zahn-kumpan.de/assets/images/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://portal.zahn-kumpan.de/blog/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Die 5 besten Terminbuchungssysteme für Zahnarztpraxen 2026",
+    "description": "Ein umfassender Vergleich der führenden Online-Terminbuchungssysteme für Zahnarztpraxen — mit Preisen, Features und Praxiserfahrungen.",
+    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-05-10",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Sarah Meier"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zahn Kumpan",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://portal.zahn-kumpan.de/assets/images/logo.png"
+      }
+    },
+    "url": "https://portal.zahn-kumpan.de/blog/terminbuchung-software.html",
+    "keywords": ["Terminbuchung", "Zahnarzt", "Software", "Vergleich"],
+    "articleSection": "Praxismanagement",
+    "inLanguage": "de-DE"
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip navigation -->
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen">
+    <span class="cookie-icon" aria-hidden="true">🍪</span>
+    <div class="cookie-text">
+      Wir nutzen Cookies, um dir das beste Erlebnis zu bieten. Mehr dazu in unserer
+      <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </div>
+    <div class="cookie-actions">
+      <button id="cookie-decline" class="btn btn-ghost btn-sm" style="color:rgba(255,255,255,0.6)">Ablehnen</button>
+      <button id="cookie-accept" class="btn btn-amber btn-sm">Akzeptieren</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobiles Menü">
+    <button id="mobile-close" class="mobile-close" aria-label="Menü schließen">✕</button>
+    <a href="index.html">🏠 Startseite</a>
+    <a href="blog/index.html">📰 Blog</a>
+    <a href="vergleich/index.html">⚡ Vergleiche</a>
+    <div class="mobile-divider"></div>
+    <a href="anmelden.html" id="mobile-login">🔐 Anmelden</a>
+    <a href="registrieren.html" id="mobile-register" class="btn btn-primary" style="text-align:center">Kostenlos registrieren</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Hauptnavigation">
+        <a href="index.html" class="nav-logo" aria-label="Zahn Kumpan — Startseite">
+          <div class="nav-logo-icon" aria-hidden="true">🦷</div>
+          <span class="nav-logo-text">Zahn <span>Kumpan</span></span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="blog/index.html">Blog</a></li>
+          <li>
+            <a href="vergleich/index.html" class="nav-premium-link">
+              Vergleiche
+              <span class="lock-icon" id="nav-lock-icon" aria-hidden="true">🔒</span>
+            </a>
+          </li>
+          <li><a href="impressum.html">Über uns</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn">Anmelden</a>
+          <a href="registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn">Kostenlos registrieren</a>
+
+          <!-- User menu (shown when logged in) -->
+          <div id="nav-user-menu" class="nav-user hidden" role="button" tabindex="0" aria-label="Benutzerkonto">
+            <div class="nav-user-avatar" aria-hidden="true">DN</div>
+            <span class="nav-user-name" id="nav-user-name">Demo Nutzer</span>
+            <button id="nav-logout-btn" class="btn btn-ghost btn-sm" style="padding:4px 10px;font-size:0.8rem" aria-label="Abmelden">↪</button>
+          </div>
+        </div>
+
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ── Member bar (shown when logged in) ── -->
+    <div id="member-bar" class="member-bar hidden">
+      <div class="container">
+        <div class="member-bar-inner">
+          <span class="member-greeting">Willkommen zurück, <strong>Demo Nutzer</strong>!</span>
+          <span class="member-badge">⭐ Premium-Zugang aktiv</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge" aria-label="Neue Features verfügbar">
+              <span>✨</span> Jetzt: Vollständige Anbietervergleiche
+            </div>
+            <h1 id="hero-heading">
+              Das Wissensportal für<br>
+              <span>Zahnarztpraxen</span>
+            </h1>
+            <p class="hero-description">
+              Fachbeiträge, Softwarevergleiche und Praxis-Know-how — exklusiv für Zahnärzte und Praxisbetreiber in Deutschland. Triff bessere Entscheidungen mit verlässlichen Daten.
+            </p>
+            <div class="hero-actions">
+              <a href="registrieren.html" class="btn btn-amber btn-lg">
+                🚀 Kostenlos registrieren
+              </a>
+              <a href="blog/index.html" class="btn btn-outline-white btn-lg">
+                Blog entdecken
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number" data-counter="120" data-suffix="+">0+</div>
+                <div class="hero-stat-label">Fachartikel</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number" data-counter="30" data-suffix="+">0+</div>
+                <div class="hero-stat-label">Verglichene Anbieter</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number" data-counter="4800" data-suffix="+">0+</div>
+                <div class="hero-stat-label">Aktive Mitglieder</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1588776814546-1ffbb172d936?w=900&q=80"
+                alt="Moderne Zahnarztpraxis"
+                loading="eager"
+                width="900"
+                height="675"
+              >
+            </div>
+            <div class="hero-card hero-card-1">
+              <div class="hero-card-icon" style="background:#D1FAE5">✅</div>
+              <div class="hero-card-text">
+                <div class="hero-card-title">DSGVO-konform</div>
+                <div class="hero-card-sub">EU-Server • Datenschutz</div>
+              </div>
+            </div>
+            <div class="hero-card hero-card-2">
+              <div class="hero-card-icon" style="background:#FEF3C7">⭐</div>
+              <div class="hero-card-text">
+                <div class="hero-card-title">Top bewertet</div>
+                <div class="hero-card-sub">4.9/5 von Zahnärzten</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BLOG TEASERS ── -->
+    <section class="section" id="blog-section" aria-labelledby="blog-section-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">📰 Aktuelle Beiträge</span>
+          <h2 class="section-title" id="blog-section-heading">Fachbeiträge für Ihre Praxis</h2>
+          <p class="section-description">
+            Von Praxismanagement bis zu Softwarevergleichen — fundierte Inhalte, die Ihnen im Alltag helfen.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Article 1 -->
+          <article class="blog-card" data-animate data-delay="1" data-category="praxismanagement"
+                   itemscope itemtype="https://schema.org/BlogPosting">
+            <div class="blog-card-image">
+              <a href="blog/terminbuchung-software.html" aria-label="Artikel lesen: Die 5 besten Terminbuchungssysteme">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=75"
+                  alt="Laptop mit Terminbuchungssoftware auf dem Bildschirm"
+                  loading="lazy"
+                  width="600"
+                  height="338"
+                  itemprop="image"
+                >
+              </a>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="badge badge-primary" itemprop="articleSection">Praxismanagement</span>
+                <time datetime="2026-05-01" itemprop="datePublished">1. Mai 2026</time>
+              </div>
+              <h3 class="blog-card-title" itemprop="headline">
+                <a href="blog/terminbuchung-software.html">
+                  Die 5 besten Terminbuchungssysteme für Zahnarztpraxen 2026
+                </a>
+              </h3>
+              <p class="blog-card-excerpt" itemprop="description">
+                Online-Buchungssysteme sparen Zeit und reduzieren No-Shows um bis zu 40 %. Wir haben die führenden Anbieter getestet und zeigen, welches System zu welcher Praxis passt.
+              </p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=56&q=75"
+                    alt="Dr. Sarah Meier"
+                    class="blog-card-author-avatar"
+                    width="28"
+                    height="28"
+                    itemprop="author"
+                  >
+                  <span class="blog-card-author-name">Dr. S. Meier</span>
+                </div>
+                <span class="blog-card-readtime">⏱ 8 Min.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card" data-animate data-delay="2" data-category="digitalisierung"
+                   itemscope itemtype="https://schema.org/BlogPosting">
+            <div class="blog-card-image">
+              <a href="blog/digitalisierung-zahnarzt.html" aria-label="Artikel lesen: Digitalisierung in der Zahnarztpraxis">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75"
+                  alt="Moderne digitale Praxisausstattung"
+                  loading="lazy"
+                  width="600"
+                  height="338"
+                  itemprop="image"
+                >
+              </a>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="badge badge-teal" itemprop="articleSection">Digitalisierung</span>
+                <time datetime="2026-04-22" itemprop="datePublished">22. April 2026</time>
+              </div>
+              <h3 class="blog-card-title" itemprop="headline">
+                <a href="blog/digitalisierung-zahnarzt.html">
+                  Digitalisierung in der Zahnarztpraxis: Schritt für Schritt erklärt
+                </a>
+              </h3>
+              <p class="blog-card-excerpt" itemprop="description">
+                Von der digitalen Patientenakte bis zur KI-gestützten Röntgenauswertung — welche Investitionen sich wirklich lohnen und wie Sie den Übergang ohne Chaos meistern.
+              </p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=56&q=75"
+                    alt="Dr. Thomas Weber"
+                    class="blog-card-author-avatar"
+                    width="28"
+                    height="28"
+                    itemprop="author"
+                  >
+                  <span class="blog-card-author-name">Dr. T. Weber</span>
+                </div>
+                <span class="blog-card-readtime">⏱ 12 Min.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card" data-animate data-delay="3" data-category="abrechnung"
+                   itemscope itemtype="https://schema.org/BlogPosting">
+            <div class="blog-card-image">
+              <a href="blog/abrechnungszentrum-vergleich.html" aria-label="Artikel lesen: Abrechnungszentrum Vergleich">
+                <img
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=75"
+                  alt="Finanzunterlagen und Buchhaltung in einer Zahnarztpraxis"
+                  loading="lazy"
+                  width="600"
+                  height="338"
+                  itemprop="image"
+                >
+              </a>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="badge badge-amber" itemprop="articleSection">Abrechnung</span>
+                <time datetime="2026-04-10" itemprop="datePublished">10. April 2026</time>
+              </div>
+              <h3 class="blog-card-title" itemprop="headline">
+                <a href="blog/abrechnungszentrum-vergleich.html">
+                  Abrechnungszentrum oder selbst abrechnen? Ein ehrlicher Vergleich
+                </a>
+              </h3>
+              <p class="blog-card-excerpt" itemprop="description">
+                DZR, ARC oder eigenständige Abrechnung mit Dentaltax? Wir rechnen durch, was sich für verschiedene Praxisgrößen lohnt — mit konkreten Beispielzahlen.
+              </p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=56&q=75"
+                    alt="Katrin Bauer"
+                    class="blog-card-author-avatar"
+                    width="28"
+                    height="28"
+                    itemprop="author"
+                  >
+                  <span class="blog-card-author-name">K. Bauer</span>
+                </div>
+                <span class="blog-card-readtime">⏱ 10 Min.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:40px" data-animate>
+          <a href="blog/index.html" class="btn btn-outline btn-lg">
+            Alle Beiträge ansehen →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURES ── -->
+    <section class="section section-light" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">💡 Warum Zahn Kumpan</span>
+          <h2 class="section-title" id="features-heading">Alles, was Ihre Praxis braucht</h2>
+          <p class="section-description">
+            Keine generischen Ratschläge — nur Inhalte, die speziell für die Herausforderungen von Zahnarztpraxen entwickelt wurden.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-animate data-delay="1">
+            <div class="feature-icon" aria-hidden="true">🔍</div>
+            <h3 class="feature-title">Neutrale Vergleiche</h3>
+            <p class="feature-desc">Kein Werbejargon. Wir testen Anbieter unabhängig und zeigen Ihnen Stärken <em>und</em> Schwächen — damit Sie die richtige Wahl treffen.</p>
+          </div>
+          <div class="feature-card" data-animate data-delay="2">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 class="feature-title">Premium-Daten</h3>
+            <p class="feature-desc">Preise, Bewertungen, Feature-Listen und Praxiserfahrungen aus echten Zahnarztpraxen — exklusiv für registrierte Mitglieder.</p>
+          </div>
+          <div class="feature-card" data-animate data-delay="3">
+            <div class="feature-icon" aria-hidden="true">🛡️</div>
+            <h3 class="feature-title">DSGVO-konform</h3>
+            <p class="feature-desc">Alle Daten auf deutschen Servern. Kein Cookie-Tracking ohne Zustimmung. Ihre Daten gehören Ihnen — nicht uns.</p>
+          </div>
+          <div class="feature-card" data-animate data-delay="1">
+            <div class="feature-icon" aria-hidden="true">📱</div>
+            <h3 class="feature-title">Überall nutzbar</h3>
+            <p class="feature-desc">Responsive Design für Desktop, Tablet und Smartphone. Auch zwischen Behandlungen schnell nachgeschlagen.</p>
+          </div>
+          <div class="feature-card" data-animate data-delay="2">
+            <div class="feature-icon" aria-hidden="true">🎓</div>
+            <h3 class="feature-title">Von Experten verfasst</h3>
+            <p class="feature-desc">Unsere Beiträge stammen von praktizierenden Zahnärzten, Praxisberaterinnen und Fachspezialisten — keine KI-Fließbandtexte.</p>
+          </div>
+          <div class="feature-card" data-animate data-delay="3">
+            <div class="feature-icon" aria-hidden="true">🔔</div>
+            <h3 class="feature-title">Immer aktuell</h3>
+            <p class="feature-desc">Vergleiche werden quartalsweise aktualisiert. Preisänderungen und neue Anbieter fließen direkt ein — kein veraltetes Wissen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PREMIUM PREVIEW (gated) ── -->
+    <section class="premium-section" id="premium-section" aria-labelledby="premium-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">⭐ Premium-Inhalt</span>
+          <h2 class="section-title" id="premium-heading">Anbietervergleiche — exklusiv für Mitglieder</h2>
+          <p class="section-description">
+            Detaillierte Vergleiche für Terminbuchungssoftware und Abrechnungszentren — mit Filtern, Ratings und Praxis-Erfahrungen.
+          </p>
+        </div>
+
+        <!-- Gate for non-logged-in users -->
+        <div id="premium-gate-container">
+          <div class="premium-preview" role="region" aria-label="Premium-Inhalt — Anmeldung erforderlich">
+            <!-- Blurred preview -->
+            <div class="premium-preview-blur comparison-skeleton" aria-hidden="true">
+              <div class="skeleton-header">
+                <div class="skeleton-cell skeleton-cell-dark"></div>
+                <div class="skeleton-cell skeleton-cell-dark"></div>
+                <div class="skeleton-cell skeleton-cell-dark"></div>
+                <div class="skeleton-cell skeleton-cell-dark"></div>
+                <div class="skeleton-cell skeleton-cell-dark"></div>
+              </div>
+              <div class="skeleton-row">
+                <div class="skeleton-cell-tall" style="border-radius:8px;display:flex;align-items:center;gap:10px;padding:8px"><div style="width:40px;height:40px;background:#e5e7eb;border-radius:8px;flex-shrink:0"></div><div style="flex:1"><div class="skeleton-cell" style="width:80%;margin-bottom:6px"></div><div class="skeleton-cell" style="width:50%"></div></div></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+              </div>
+              <div class="skeleton-row">
+                <div class="skeleton-cell-tall" style="border-radius:8px;display:flex;align-items:center;gap:10px;padding:8px"><div style="width:40px;height:40px;background:#e5e7eb;border-radius:8px;flex-shrink:0"></div><div style="flex:1"><div class="skeleton-cell" style="width:65%;margin-bottom:6px"></div><div class="skeleton-cell" style="width:45%"></div></div></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+              </div>
+              <div class="skeleton-row">
+                <div class="skeleton-cell-tall" style="border-radius:8px;display:flex;align-items:center;gap:10px;padding:8px"><div style="width:40px;height:40px;background:#e5e7eb;border-radius:8px;flex-shrink:0"></div><div style="flex:1"><div class="skeleton-cell" style="width:70%;margin-bottom:6px"></div><div class="skeleton-cell" style="width:55%"></div></div></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+                <div class="skeleton-cell"></div>
+              </div>
+            </div>
+
+            <!-- Overlay CTA -->
+            <div class="premium-overlay" role="dialog" aria-labelledby="premium-cta-title">
+              <div class="premium-overlay-card">
+                <div class="premium-overlay-icon" aria-hidden="true">🔒</div>
+                <h3 class="premium-overlay-title" id="premium-cta-title">Premium-Vergleiche freischalten</h3>
+                <p class="premium-overlay-desc">
+                  Registriere dich kostenlos und erhalte sofortigen Zugang zu allen Anbietervergleichen — inklusive Preise, Ratings und Praxis-Erfahrungen.
+                </p>
+                <ul class="premium-features-list" aria-label="Was du bekommst">
+                  <li>6 vollständige Anbieterprofile mit echten Preisen</li>
+                  <li>Filterbare Vergleiche nach Kategorie, Preis &amp; Support</li>
+                  <li>Detaillierte Vor- und Nachteile aus der Praxis</li>
+                  <li>Quartalsweise aktualisierte Daten</li>
+                </ul>
+                <div class="premium-overlay-actions">
+                  <a href="registrieren.html" class="btn btn-amber btn-lg btn-full">
+                    🚀 Kostenlos registrieren
+                  </a>
+                  <a href="anmelden.html" class="btn btn-outline btn-full">
+                    Bereits Mitglied? Anmelden
+                  </a>
+                </div>
+                <p class="premium-note">Keine Kreditkarte erforderlich · Dauerhaft kostenlos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full content (shown when logged in) -->
+        <div id="premium-full-content" class="hidden">
+          <div style="text-align:center;padding:48px">
+            <p style="font-size:1.1rem;color:var(--gray-600);margin-bottom:24px">
+              ✅ Du bist angemeldet. Vollständige Vergleiche findest du hier:
+            </p>
+            <a href="vergleich/index.html" class="btn btn-primary btn-lg">
+              Zu den Vergleichen →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section class="section section-dark" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">💬 Was Mitglieder sagen</span>
+          <h2 class="section-title" id="testimonials-heading">Vertraut von Zahnärzten deutschlandweit</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-animate data-delay="1">
+            <p class="testimonial-quote">
+              "Dank des Terminbuchungsvergleichs haben wir innerhalb einer Woche das richtige System gefunden und uns 2 Monate Recherche gespart. Die Datentiefe ist beeindruckend."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=88&q=75"
+                alt="Dr. Michael Hoffmann"
+                class="testimonial-avatar"
+                width="44"
+                height="44"
+              >
+              <div class="testimonial-author-info">
+                <div class="testimonial-name">Dr. Michael Hoffmann</div>
+                <div class="testimonial-role">Zahnarzt, München</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-animate data-delay="2">
+            <p class="testimonial-quote">
+              "Endlich ein Portal, das wirklich für Zahnärzte gemacht ist — keine allgemeinen Tipps, sondern konkrete Zahlen und echte Praxiserfahrungen."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=88&q=75"
+                alt="Dr. Laura Steinbach"
+                class="testimonial-avatar"
+                width="44"
+                height="44"
+              >
+              <div class="testimonial-author-info">
+                <div class="testimonial-name">Dr. Laura Steinbach</div>
+                <div class="testimonial-role">Kieferorthopädin, Hamburg</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-animate data-delay="3">
+            <p class="testimonial-quote">
+              "Der Abrechnungszentrum-Vergleich hat mir gezeigt, dass ich jährlich ca. 3.800 € sparen kann. Die Entscheidung war dann einfach."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=88&q=75"
+                alt="Dr. Petra König"
+                class="testimonial-avatar"
+                width="44"
+                height="44"
+              >
+              <div class="testimonial-author-info">
+                <div class="testimonial-name">Dr. Petra König</div>
+                <div class="testimonial-role">Zahnärztin, Frankfurt</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" data-animate>Bereit, bessere Entscheidungen zu treffen?</h2>
+        <p data-animate>
+          Registriere dich kostenlos und erhalte sofortigen Zugang zu allen Vergleichen, Fachbeiträgen und Premium-Inhalten.
+        </p>
+        <div class="cta-banner-actions" data-animate>
+          <a href="registrieren.html" class="btn btn-amber btn-lg">🚀 Jetzt kostenlos starten</a>
+          <a href="blog/index.html"   class="btn btn-outline-white btn-lg">Blog entdecken</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="Zahn Kumpan — Startseite">
+            <div class="footer-logo-icon" aria-hidden="true">🦷</div>
+            <span class="footer-logo-text">Zahn Kumpan</span>
+          </a>
+          <p class="footer-tagline">
+            Das Wissensportal für Zahnarztpraxen in Deutschland. Neutrale Vergleiche, Fachbeiträge und Praxis-Know-how.
+          </p>
+          <div class="footer-social" aria-label="Social Media">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter / X">𝕏</a>
+            <a href="#" aria-label="XING">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Portal</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="vergleich/index.html">Vergleiche</a></li>
+            <li><a href="registrieren.html">Registrieren</a></li>
+            <li><a href="anmelden.html">Anmelden</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Themen</h4>
+          <ul class="footer-links">
+            <li><a href="blog/terminbuchung-software.html">Terminbuchung</a></li>
+            <li><a href="blog/abrechnungszentrum-vergleich.html">Abrechnung</a></li>
+            <li><a href="blog/digitalisierung-zahnarzt.html">Digitalisierung</a></li>
+            <li><a href="vergleich/index.html">Anbietervergleiche</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="datenschutz.html#cookies">Cookie-Richtlinie</a></li>
+          </ul>
+          <div class="footer-gdpr" style="margin-top:20px">
+            <span class="footer-gdpr-badge">DSGVO</span>
+            <span style="font-size:0.8rem">EU-Server · Deutschland</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Zahn Kumpan. Alle Rechte vorbehalten.</span>
+        <div class="footer-bottom-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="datenschutz.html#cookies">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
