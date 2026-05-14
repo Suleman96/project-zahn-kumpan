@@ -28,10 +28,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload src/ as GitHub Pages artifact
+      - name: Prepare Pages artifact from src/
+        run: |
+          mkdir -p dist
+          cp -r src/. dist/
+          touch dist/.nojekyll
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./src
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
