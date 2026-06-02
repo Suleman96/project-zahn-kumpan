@@ -1,21 +1,42 @@
 /* ============================================================
    Zahn Kumpan — Auth Module
-   Demo credentials: demo@zahnkumpan.de / test1234
+   Free:    frei@zahnkumpan.de  / free1234
+   Premium: demo@zahnkumpan.de  / test1234
    ============================================================ */
 
 const AUTH_KEY = 'zk_session_v1';
-const DEMO_CREDENTIALS = { email: 'demo@zahnkumpan.de', password: 'test1234' };
+
+const DEMO_USERS = {
+  premium: {
+    email:    'demo@zahnkumpan.de',
+    password: 'test1234',
+    plan:     'premium',
+    name:     'Demo Nutzer',
+    initials: 'DN',
+  },
+  free: {
+    email:    'frei@zahnkumpan.de',
+    password: 'free1234',
+    plan:     'free',
+    name:     'Gratis Nutzer',
+    initials: 'GN',
+  },
+};
 
 const Auth = {
   login(email, password) {
-    const trimmedEmail = (email || '').trim().toLowerCase();
-    if (trimmedEmail === DEMO_CREDENTIALS.email && password === DEMO_CREDENTIALS.password) {
+    const trimmed = (email || '').trim().toLowerCase();
+    const match = Object.values(DEMO_USERS).find(
+      u => u.email === trimmed && u.password === password
+    );
+    if (match) {
       const session = {
-        email: trimmedEmail,
-        name: 'Demo Nutzer',
-        initials: 'DN',
+        email:     trimmed,
+        name:      match.name,
+        initials:  match.initials,
+        plan:      match.plan,
+        isPremium: match.plan === 'premium',
         loginTime: Date.now(),
-        isPremium: true,
       };
       localStorage.setItem(AUTH_KEY, JSON.stringify(session));
       return { success: true, session };
@@ -40,11 +61,26 @@ const Auth = {
   isLoggedIn() {
     return this.getSession() !== null;
   },
+
+  isPremium() {
+    const session = this.getSession();
+    return session !== null && session.isPremium === true;
+  },
+
+  /* Demo-only: upgrade current session to premium (no real payment) */
+  demoActivatePremium() {
+    const session = this.getSession();
+    if (!session) return false;
+    session.isPremium = true;
+    session.plan = 'premium';
+    localStorage.setItem(AUTH_KEY, JSON.stringify(session));
+    return true;
+  },
 };
 
 /* ── Nav state update ── */
 function updateNavForAuth() {
-  const session = Auth.getSession();
+  const session    = Auth.getSession();
   const loginBtn   = document.getElementById('nav-login-btn');
   const registerBtn = document.getElementById('nav-register-btn');
   const userMenu   = document.getElementById('nav-user-menu');
@@ -55,19 +91,35 @@ function updateNavForAuth() {
   if (session) {
     if (loginBtn)    loginBtn.classList.add('hidden');
     if (registerBtn) registerBtn.classList.add('hidden');
+
     if (userMenu) {
       userMenu.classList.remove('hidden');
       if (userNameEl) userNameEl.textContent = session.name;
     }
+
     if (memberBar) {
       memberBar.classList.remove('hidden');
-      const greetEl = memberBar.querySelector('.member-greeting strong');
-      if (greetEl) greetEl.textContent = session.name;
+      const greetStrong = memberBar.querySelector('.member-greeting strong');
+      if (greetStrong) greetStrong.textContent = session.name;
+
+      const badgeEl = memberBar.querySelector('.member-badge');
+      if (badgeEl) {
+        if (session.isPremium) {
+          badgeEl.textContent = '⭐ Premium-Zugang aktiv';
+          badgeEl.style.cssText = '';
+        } else {
+          badgeEl.textContent = '📌 Kostenloses Konto';
+          badgeEl.style.cssText = 'background:var(--amber-100);color:var(--amber-800);border-color:var(--amber-200)';
+        }
+      }
     }
-    // Unlock premium nav link
-    document.querySelectorAll('.nav-premium-link .lock-icon').forEach(el => el.remove());
-    document.querySelectorAll('.premium-locked-hint').forEach(el => el.classList.add('hidden'));
-    document.querySelectorAll('.premium-unlocked-hint').forEach(el => el.classList.remove('hidden'));
+
+    /* Lock icon: only remove for premium users */
+    if (session.isPremium) {
+      document.querySelectorAll('.nav-premium-link .lock-icon').forEach(el => el.remove());
+      document.querySelectorAll('.premium-locked-hint').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.premium-unlocked-hint').forEach(el => el.classList.remove('hidden'));
+    }
   } else {
     if (loginBtn)    loginBtn.classList.remove('hidden');
     if (registerBtn) registerBtn.classList.remove('hidden');
@@ -85,18 +137,33 @@ function updateNavForAuth() {
   }
 }
 
-/* ── Premium gate ── */
+/* ── Premium gate — three states ──
+   1. Guest (not logged in)         → #premium-gate-container
+   2. Free user (logged in, no sub) → #premium-upgrade-container
+   3. Premium user                  → #premium-full-content
+*/
 function initPremiumGate() {
-  const gateContainer = document.getElementById('premium-gate-container');
-  const fullContent   = document.getElementById('premium-full-content');
-  if (!gateContainer && !fullContent) return;
+  const gateContainer    = document.getElementById('premium-gate-container');
+  const upgradeContainer = document.getElementById('premium-upgrade-container');
+  const fullContent      = document.getElementById('premium-full-content');
 
-  if (Auth.isLoggedIn()) {
-    if (gateContainer) gateContainer.classList.add('hidden');
-    if (fullContent)   fullContent.classList.remove('hidden');
+  if (!gateContainer && !upgradeContainer && !fullContent) return;
+
+  const show = (el) => el && el.classList.remove('hidden');
+  const hide = (el) => el && el.classList.add('hidden');
+
+  if (Auth.isPremium()) {
+    hide(gateContainer);
+    hide(upgradeContainer);
+    show(fullContent);
+  } else if (Auth.isLoggedIn()) {
+    hide(gateContainer);
+    show(upgradeContainer);
+    hide(fullContent);
   } else {
-    if (gateContainer) gateContainer.classList.remove('hidden');
-    if (fullContent)   fullContent.classList.add('hidden');
+    show(gateContainer);
+    hide(upgradeContainer);
+    hide(fullContent);
   }
 }
 
@@ -105,6 +172,18 @@ function requireAuth(returnPath) {
   if (!Auth.isLoggedIn()) {
     const redirect = returnPath || window.location.href;
     window.location.href = resolveRoot('anmelden.html') + '?redirect=' + encodeURIComponent(redirect);
+  }
+}
+
+/* ── Require premium (redirect to pricing if not premium) ── */
+function requirePremium(returnPath) {
+  if (!Auth.isLoggedIn()) {
+    const redirect = returnPath || window.location.href;
+    window.location.href = resolveRoot('anmelden.html') + '?redirect=' + encodeURIComponent(redirect);
+    return;
+  }
+  if (!Auth.isPremium()) {
+    window.location.href = resolveRoot('preise.html');
   }
 }
 
@@ -126,13 +205,6 @@ function showToast(message, type = 'success') {
 
 /* ── Resolve root path (works from subdirectories) ── */
 function resolveRoot(path) {
-  const depth = (window.location.pathname.match(/\//g) || []).length;
-  const base = window.location.hostname === '' || window.location.hostname === 'localhost'
-    ? window.location.pathname.includes('/portal/')
-      ? window.location.pathname.split('/portal/')[0] + '/portal/'
-      : '/'
-    : '';
-  // Simple relative resolution based on current path depth within portal
   const currentPath = window.location.pathname;
   if (currentPath.includes('/blog/') || currentPath.includes('/vergleich/')) {
     return '../' + path;
@@ -143,8 +215,8 @@ function resolveRoot(path) {
 /* ── Mobile menu ── */
 function initMobileMenu() {
   const hamburger = document.getElementById('nav-hamburger');
-  const menu = document.getElementById('mobile-menu');
-  const closeBtn = document.getElementById('mobile-close');
+  const menu      = document.getElementById('mobile-menu');
+  const closeBtn  = document.getElementById('mobile-close');
   if (!hamburger || !menu) return;
 
   hamburger.addEventListener('click', () => {
@@ -172,18 +244,8 @@ function initCookieBanner() {
     return;
   }
 
-  if (accept) {
-    accept.addEventListener('click', () => {
-      localStorage.setItem('zk_cookie_consent', 'accepted');
-      banner.classList.add('hidden');
-    });
-  }
-  if (decline) {
-    decline.addEventListener('click', () => {
-      localStorage.setItem('zk_cookie_consent', 'declined');
-      banner.classList.add('hidden');
-    });
-  }
+  if (accept)  accept.addEventListener('click',  () => { localStorage.setItem('zk_cookie_consent', 'accepted');  banner.classList.add('hidden'); });
+  if (decline) decline.addEventListener('click', () => { localStorage.setItem('zk_cookie_consent', 'declined');  banner.classList.add('hidden'); });
 }
 
 /* ── DOMContentLoaded ── */

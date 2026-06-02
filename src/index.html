@@ -374,6 +374,24 @@
           </div>
         </div>
 
+        <!-- Upgrade prompt (free user: logged in, no premium subscription) -->
+        <div id="premium-upgrade-container" class="hidden">
+          <div style="text-align:center;padding:48px 24px;background:linear-gradient(135deg,var(--amber-50),#fff9f0);border-radius:var(--radius-xl);border:2px solid var(--amber-200)">
+            <div style="font-size:2.5rem;margin-bottom:12px" aria-hidden="true">⭐</div>
+            <div style="display:inline-block;padding:4px 14px;background:var(--amber-100);color:var(--amber-800);border:1px solid var(--amber-200);border-radius:999px;font-size:0.8rem;font-weight:600;margin-bottom:16px">📌 Kostenloses Konto aktiv</div>
+            <h3 style="font-size:1.4rem;margin-bottom:10px;letter-spacing:-0.01em" data-i18n="home.upgrade.heading">Premium freischalten</h3>
+            <p style="color:var(--gray-500);font-size:0.9375rem;margin-bottom:24px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.6" data-i18n="home.upgrade.desc">
+              Dein kostenloses Konto gibt dir Zugang zu allen Fachbeiträgen. Für vollständige Anbietervergleiche benötigst du ein Premium-Abonnement.
+            </p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+              <a href="preise.html" class="btn btn-amber btn-lg" data-i18n="home.upgrade.cta">⭐ Jetzt auf Premium upgraden</a>
+              <a href="blog/index.html" class="btn btn-outline btn-lg" data-i18n="home.upgrade.blog">Blog lesen →</a>
+            </div>
+            <p style="margin-top:16px;font-size:0.8125rem;color:var(--gray-400)" data-i18n="home.upgrade.price">ab €14,90/Monat · Jederzeit kündbar</p>
+          </div>
+        </div>
+
+        <!-- Premium unlocked (premium user) -->
         <div id="premium-full-content" class="hidden">
           <div style="text-align:center;padding:48px">
             <p style="font-size:1.1rem;color:var(--gray-600);margin-bottom:24px" data-i18n="home.loggedin.text">

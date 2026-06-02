@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Preise & Pläne — Zahn Kumpan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="shared.skip">Zum Hauptinhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Hauptnavigation">
+        <a href="index.html" class="nav-logo" aria-label="Zahn Kumpan — Startseite">
+          <div class="nav-logo-icon" aria-hidden="true">🦷</div>
+          <span class="nav-logo-text">Zahn <span>Kumpan</span></span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="blog/index.html" data-i18n="shared.nav.blog">Blog</a></li>
+          <li>
+            <a href="vergleich/index.html" class="nav-premium-link">
+              <span data-i18n="shared.nav.compare">Vergleiche</span>
+              <span class="lock-icon" id="nav-lock-icon" aria-hidden="true">🔒</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <a href="anmelden.html" class="btn btn-ghost btn-sm" id="nav-login-btn" data-i18n="shared.nav.login">Anmelden</a>
+          <a href="registrieren.html" class="btn btn-primary btn-sm" id="nav-register-btn" data-i18n="shared.nav.register.short">Registrieren</a>
+          <div id="nav-user-menu" class="nav-user hidden">
+            <div class="nav-user-avatar">DN</div>
+            <span class="nav-user-name" id="nav-user-name">Demo Nutzer</span>
+            <button id="nav-logout-btn" class="btn btn-ghost btn-sm" style="padding:4px 10px;font-size:0.8rem" aria-label="Abmelden">↪</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div id="member-bar" class="member-bar hidden">
+      <div class="container">
+        <div class="member-bar-inner">
+          <span class="member-greeting">Willkommen zurück, <strong>Demo Nutzer</strong>!</span>
+          <span class="member-badge">⭐ Premium-Zugang aktiv</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div style="background:linear-gradient(135deg,var(--primary-900),var(--primary-700));padding:64px 0 56px;color:white;text-align:center">
+      <div class="container">
+        <nav aria-label="Breadcrumb" style="font-size:0.8125rem;color:rgba(255,255,255,0.5);margin-bottom:20px">
+          <a href="index.html" style="color:rgba(255,255,255,0.5)">Startseite</a>
+          <span style="margin:0 8px">›</span>
+          <span style="color:white">Preise</span>
+        </nav>
+        <h1 style="color:white;font-size:clamp(2rem,5vw,3rem);letter-spacing:-0.03em;margin-bottom:16px">Preise &amp; Pläne</h1>
+        <p style="color:rgba(255,255,255,0.75);font-size:1.125rem;max-width:540px;margin:0 auto;line-height:1.65">
+          Starte kostenlos mit allen Fachbeiträgen — oder schalte Anbietervergleiche mit Premium frei.
+        </p>
+      </div>
+    </div>
+
+    <!-- Already premium notice -->
+    <div id="already-premium-notice" class="hidden" style="background:var(--green-50);border-bottom:1px solid var(--green-100);padding:16px 0;text-align:center">
+      <div class="container">
+        <p style="color:var(--green-700);font-weight:600">✅ Du hast bereits Premium-Zugang. <a href="vergleich/index.html" style="color:var(--green-700);text-decoration:underline">Direkt zu den Vergleichen →</a></p>
+      </div>
+    </div>
+
+    <!-- Pricing cards -->
+    <section style="padding:64px 0" aria-labelledby="pricing-heading">
+      <div class="container">
+        <h2 class="sr-only" id="pricing-heading">Preispläne</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto" class="pricing-grid">
+
+          <!-- Free plan -->
+          <div style="background:white;border:2px solid var(--gray-200);border-radius:var(--radius-xl);padding:40px;display:flex;flex-direction:column" role="article" aria-label="Kostenloser Plan">
+            <div style="margin-bottom:24px">
+              <div style="font-size:0.8125rem;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px">Kostenlos</div>
+              <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:8px">
+                <span style="font-size:2.5rem;font-weight:800;color:var(--gray-900)">€0</span>
+                <span style="color:var(--gray-400);font-size:0.9375rem">/Monat</span>
+              </div>
+              <p style="color:var(--gray-500);font-size:0.9375rem;line-height:1.5">Dauerhaft kostenlos. Keine Kreditkarte erforderlich.</p>
+            </div>
+
+            <ul style="list-style:none;padding:0;margin:0 0 32px;display:flex;flex-direction:column;gap:12px;flex:1">
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--green-500);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem">120+ Fachbeiträge lesen</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--green-500);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem">Monatlicher Newsletter</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--green-500);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem">DSGVO-konforme Plattform</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--gray-300);font-weight:700;flex-shrink:0">✕</span>
+                <span style="font-size:0.9375rem;color:var(--gray-400);text-decoration:line-through">Anbietervergleiche</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--gray-300);font-weight:700;flex-shrink:0">✕</span>
+                <span style="font-size:0.9375rem;color:var(--gray-400);text-decoration:line-through">Filter & Sortierung</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--gray-300);font-weight:700;flex-shrink:0">✕</span>
+                <span style="font-size:0.9375rem;color:var(--gray-400);text-decoration:line-through">Anbieter-Downloads & PDFs</span>
+              </li>
+            </ul>
+
+            <a href="registrieren.html" class="btn btn-outline btn-full btn-lg" id="free-cta">Kostenlos registrieren</a>
+          </div>
+
+          <!-- Premium plan -->
+          <div style="background:linear-gradient(160deg,var(--primary-900),var(--primary-700));border:2px solid var(--primary-600);border-radius:var(--radius-xl);padding:40px;display:flex;flex-direction:column;position:relative;box-shadow:0 20px 60px rgba(15,23,42,0.25)" role="article" aria-label="Premium Plan">
+            <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--amber-500);color:white;font-size:0.75rem;font-weight:700;padding:4px 16px;border-radius:999px;letter-spacing:0.05em;white-space:nowrap">⭐ EMPFOHLEN</div>
+
+            <div style="margin-bottom:24px">
+              <div style="font-size:0.8125rem;font-weight:700;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px">Premium</div>
+              <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:8px">
+                <span style="font-size:2.5rem;font-weight:800;color:white">€14,90</span>
+                <span style="color:rgba(255,255,255,0.5);font-size:0.9375rem">/Monat</span>
+              </div>
+              <p style="color:rgba(255,255,255,0.65);font-size:0.9375rem;line-height:1.5">Jederzeit kündbar. Keine versteckten Kosten.</p>
+            </div>
+
+            <ul style="list-style:none;padding:0;margin:0 0 32px;display:flex;flex-direction:column;gap:12px;flex:1">
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">Alles aus dem kostenlosen Plan</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">6 vollständige Anbieterprofile</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">Filter nach Preis, Support, Kategorie</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">Detaillierte Vor- &amp; Nachteile</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">Quartalsweise aktualisierte Daten</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start">
+                <span style="color:var(--amber-400);font-weight:700;flex-shrink:0">✓</span>
+                <span style="font-size:0.9375rem;color:white">Anbieter-Downloads &amp; PDF-Guides</span>
+              </li>
+            </ul>
+
+            <button id="premium-upgrade-btn" class="btn btn-amber btn-full btn-lg" onclick="handleUpgrade()">
+              ⭐ Premium aktivieren
+            </button>
+            <p style="text-align:center;font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:12px" id="premium-btn-note">Keine Kreditkarte · Jederzeit kündbar</p>
+          </div>
+        </div>
+
+        <!-- Demo notice -->
+        <div style="max-width:860px;margin:24px auto 0">
+          <div style="background:var(--amber-50);border:1px solid var(--amber-200);border-radius:var(--radius-md);padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:1.1rem;flex-shrink:0">🛠️</span>
+            <div>
+              <strong style="color:var(--amber-800);font-size:0.875rem">Prototype-Demo</strong>
+              <p style="color:var(--amber-700);font-size:0.8125rem;margin:4px 0 0;line-height:1.5">
+                Dies ist ein nicht-produktiver Prototyp. Der "Premium aktivieren"-Button simuliert einen Kauf ohne echte Zahlung. In der Produktion würde hier eine sichere Stripe-Integration stehen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature comparison table -->
+    <section style="padding:0 0 64px" aria-labelledby="compare-table-heading">
+      <div class="container">
+        <h2 id="compare-table-heading" style="text-align:center;font-size:1.5rem;margin-bottom:32px;letter-spacing:-0.02em">Was ist in jedem Plan enthalten?</h2>
+        <div style="max-width:700px;margin:0 auto;overflow-x:auto">
+          <table class="comparison-table" style="width:100%" aria-label="Plan-Vergleich">
+            <thead>
+              <tr>
+                <th scope="col" style="width:55%;text-align:left">Feature</th>
+                <th scope="col" style="width:22.5%;text-align:center">Kostenlos</th>
+                <th scope="col" style="width:22.5%;text-align:center;background:var(--primary-50);color:var(--primary-800)">⭐ Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="font-weight:600;color:var(--gray-500);font-size:0.8rem;padding-top:20px;text-transform:uppercase;letter-spacing:0.05em" colspan="3">Inhalte</td></tr>
+              <tr><td>Fachbeiträge lesen (120+)</td><td style="text-align:center;color:var(--green-500);font-weight:700">✓</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Newsletter (monatlich)</td><td style="text-align:center;color:var(--green-500);font-weight:700">✓</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td style="font-weight:600;color:var(--gray-500);font-size:0.8rem;padding-top:20px;text-transform:uppercase;letter-spacing:0.05em" colspan="3">Anbietervergleiche</td></tr>
+              <tr><td>Vollständige Anbieterprofile</td><td style="text-align:center;color:var(--gray-300);font-weight:700">✕</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Filter nach Preis &amp; Support</td><td style="text-align:center;color:var(--gray-300);font-weight:700">✕</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Vor- &amp; Nachteile aus der Praxis</td><td style="text-align:center;color:var(--gray-300);font-weight:700">✕</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Tabellen- &amp; Kachel-Ansicht</td><td style="text-align:center;color:var(--gray-300);font-weight:700">✕</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Quartalsweise Aktualisierung</td><td style="text-align:center;color:var(--gray-300);font-weight:700">✕</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td style="font-weight:600;color:var(--gray-500);font-size:0.8rem;padding-top:20px;text-transform:uppercase;letter-spacing:0.05em" colspan="3">Datenschutz &amp; Technik</td></tr>
+              <tr><td>DSGVO-konform (EU-Server)</td><td style="text-align:center;color:var(--green-500);font-weight:700">✓</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+              <tr><td>Kein Drittanbieter-Tracking</td><td style="text-align:center;color:var(--green-500);font-weight:700">✓</td><td style="text-align:center;color:var(--green-500);font-weight:700;background:var(--primary-50)">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="padding:0 0 80px;background:var(--gray-50)" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading" style="text-align:center;font-size:1.5rem;margin-bottom:40px;letter-spacing:-0.02em;padding-top:64px">Häufige Fragen</h2>
+        <div style="max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+          <details style="background:white;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:20px 24px">
+            <summary style="font-weight:600;cursor:pointer;color:var(--gray-900)">Wann wird mein Konto belastet?</summary>
+            <p style="margin-top:12px;color:var(--gray-500);font-size:0.9375rem;line-height:1.6">In der Produktion: Das Abonnement beginnt nach erfolgreicher Zahlung und läuft monatlich. Im Prototyp gibt es keine echte Zahlung.</p>
+          </details>
+          <details style="background:white;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:20px 24px">
+            <summary style="font-weight:600;cursor:pointer;color:var(--gray-900)">Kann ich jederzeit kündigen?</summary>
+            <p style="margin-top:12px;color:var(--gray-500);font-size:0.9375rem;line-height:1.6">Ja — das Premium-Abonnement ist monatlich kündbar. Nach der Kündigung bleibt der Zugang bis zum Ende des Abrechnungszeitraums aktiv.</p>
+          </details>
+          <details style="background:white;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:20px 24px">
+            <summary style="font-weight:600;cursor:pointer;color:var(--gray-900)">Welche Zahlungsmethoden werden unterstützt?</summary>
+            <p style="margin-top:12px;color:var(--gray-500);font-size:0.9375rem;line-height:1.6">In der Produktion: Kreditkarte, SEPA-Lastschrift und PayPal über Stripe. Im Prototyp ist keine Zahlung erforderlich.</p>
+          </details>
+          <details style="background:white;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:20px 24px">
+            <summary style="font-weight:600;cursor:pointer;color:var(--gray-900)">Sind meine Daten sicher?</summary>
+            <p style="margin-top:12px;color:var(--gray-500);font-size:0.9375rem;line-height:1.6">Ja. Alle Daten werden auf Servern der Hetzner Online GmbH in Deutschland verarbeitet. DSGVO-konform, kein Drittanbieter-Tracking, keine Datenweitergabe.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding:24px 0">
+        <span data-i18n="shared.footer.copyright">© 2026 Zahn Kumpan. Alle Rechte vorbehalten.</span>
+        <div class="footer-bottom-links">
+          <a href="impressum.html" data-i18n="shared.footer.imprint">Impressum</a>
+          <a href="datenschutz.html" data-i18n="shared.footer.privacy">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 640px) {
+      .pricing-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function handleUpgrade() {
+      const session = Auth.getSession();
+      if (!session) {
+        window.location.href = 'anmelden.html?redirect=' + encodeURIComponent('preise.html');
+        return;
+      }
+      if (session.isPremium) {
+        window.location.href = 'vergleich/index.html';
+        return;
+      }
+      Auth.demoActivatePremium();
+      const btn = document.getElementById('premium-upgrade-btn');
+      const note = document.getElementById('premium-btn-note');
+      if (btn) { btn.textContent = '✅ Premium aktiviert!'; btn.disabled = true; }
+      if (note) note.textContent = 'Du wirst weitergeleitet…';
+      showToast('🎉 Premium-Zugang aktiviert! (Demo)', 'success');
+      setTimeout(() => { window.location.href = 'vergleich/index.html'; }, 1400);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const session = Auth.getSession();
+      const notice = document.getElementById('already-premium-notice');
+      const freeCta = document.getElementById('free-cta');
+      const upgradeBtn = document.getElementById('premium-upgrade-btn');
+      const upgradeNote = document.getElementById('premium-btn-note');
+
+      if (session && session.isPremium) {
+        if (notice) notice.classList.remove('hidden');
+        if (upgradeBtn) { upgradeBtn.textContent = '✅ Premium bereits aktiv'; upgradeBtn.disabled = true; }
+        if (upgradeNote) upgradeNote.textContent = 'Direkt zu den Vergleichen →';
+        if (upgradeBtn) upgradeBtn.onclick = () => { window.location.href = 'vergleich/index.html'; };
+      } else if (session && !session.isPremium) {
+        if (freeCta) { freeCta.textContent = '✓ Kostenlos registriert'; freeCta.classList.add('disabled'); freeCta.style.pointerEvents = 'none'; }
+      }
+    });
+  </script>
+</body>
+</html>

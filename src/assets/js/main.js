@@ -194,7 +194,10 @@ function initLoginForm() {
     if (result.success) {
       showToast && showToast('Willkommen zurück! Du wirst weitergeleitet...', 'success');
       const params = new URLSearchParams(window.location.search);
-      const redirect = params.get('redirect') || resolveRoot('vergleich/index.html');
+      const defaultRedirect = result.session.isPremium
+        ? resolveRoot('vergleich/index.html')
+        : resolveRoot('index.html');
+      const redirect = params.get('redirect') || defaultRedirect;
       setTimeout(() => { window.location.href = redirect; }, 1000);
     } else {
       if (errorEl) { errorEl.textContent = result.error; errorEl.classList.remove('hidden'); }
