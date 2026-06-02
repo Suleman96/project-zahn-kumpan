@@ -155,13 +155,13 @@
 
       /* ── vergleich/index.html ────────────────────────── */
       'compare.gate.heading': 'Premium-Inhalt',
-      'compare.gate.desc': 'Die vollständigen Anbietervergleiche sind nur für registrierte Mitglieder zugänglich. Die Registrierung ist kostenlos und dauert unter 2 Minuten.',
+      'compare.gate.desc': 'Terminbuchungssoftware, Abrechnungszentren, Praxissoftware (PVS) und Praxisfinanzierung — vollständige Vergleiche nur für registrierte Mitglieder. Kostenlos, dauert unter 2 Minuten.',
       'compare.gate.cta1': '🚀 Kostenlos registrieren',
       'compare.gate.cta2': 'Bereits Mitglied? Anmelden',
       'compare.gate.note': 'Keine Kreditkarte · Keine Werbung · DSGVO-konform',
       'compare.badge': '⭐ Premium-Inhalt',
       'compare.heading': 'Anbietervergleiche',
-      'compare.desc': 'Detaillierte Vergleiche für Terminbuchungssoftware und Abrechnungszentren — mit echten Preisen, Feature-Listen und Praxis-Bewertungen. Zuletzt aktualisiert: Mai 2026.',
+      'compare.desc': 'Detaillierte Vergleiche für Terminbuchungssoftware, Abrechnungszentren, Praxissoftware (PVS) und Praxisfinanzierung — mit verifizierten Preisen, Feature-Listen und Praxis-Bewertungen. Zuletzt aktualisiert: Mai 2026.',
       'compare.filter.label': 'Filter:',
       'compare.filter.all': 'Alle',
       'compare.filter.booking': 'Terminbuchung',
@@ -492,13 +492,13 @@
 
       /* ── vergleich/index.html ────────────────────────── */
       'compare.gate.heading': 'Premium Content',
-      'compare.gate.desc': 'The full provider comparisons are only available to registered members. Registration is free and takes less than 2 minutes.',
+      'compare.gate.desc': 'Booking software, billing centres, practice software (PMS) and financing — full comparisons for registered members only. Free, takes under 2 minutes.',
       'compare.gate.cta1': '🚀 Register Free',
       'compare.gate.cta2': 'Already a member? Log in',
       'compare.gate.note': 'No credit card · No advertising · GDPR compliant',
       'compare.badge': '⭐ Premium Content',
       'compare.heading': 'Provider Comparisons',
-      'compare.desc': 'Detailed comparisons for appointment booking software and billing centres — with real prices, feature lists and practice ratings. Last updated: May 2026.',
+      'compare.desc': 'Detailed comparisons for booking software, billing centres, practice software (PMS) and financing — with verified prices, feature lists and practice ratings. Last updated: May 2026.',
       'compare.filter.label': 'Filter:',
       'compare.filter.all': 'All',
       'compare.filter.booking': 'Booking Software',
